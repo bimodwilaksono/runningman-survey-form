@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Running Man Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Running Man Survey Form</h1>
+        <p id="description">Please fill the survey form below</p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="name"
+            id="name"
+            placeholder="Enter your name here"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address here"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">Age (Optional)</label>
+          <input type="number" id="number" min="7" max="80" placeholder="Age" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <p>Where did you know Running Man from?</p>
+          <select name="knowFrom" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Youtube">Youtube</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Who is your favorite member?</p>
+          <label for="member1"
+            ><input
+              type="radio"
+              name="member"
+              value="member1"
+              id="member1"
+              checked
+            />
+            Yoo Jae Seok</label
+          >
+          <label for="member2">
+            <input type="radio" name="member" value="member2" id="member2" />
+            Ji Seok Jin</label
+          >
+
+          <label for="member3">
+            <input type="radio" name="member" value="member3" id="member3" />
+            Kim Jong Kook</label
+          >
+          <label for="member4">
+            <input type="radio" name="member" value="member4" id="member4" />
+            Haha</label
+          >
+
+          <label for="member5">
+            <input type="radio" name="member" value="member5" id="member5" />
+            Song Ji Hyo</label
+          >
+
+          <label for="member6">
+            <input type="radio" name="member" value="member6" id="member6" />
+            Yang Se Chan</label
+          >
+
+          <label for="member7">
+            <input type="radio" name="member" value="member7" id="member7" />
+            Jeon So Min</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Which one episode do you like?</p>
+          <label for="episodeChoice1">
+            <input type="checkbox" value="episode100" id="episodeChoice1" />
+            Episode 100</label
+          >
+
+          <label for="episodeChoice2">
+            <input type="checkbox" value="episode200" id="episodeChoice2" />
+            Episode 200</label
+          >
+
+          <label for="episodeChoice3">
+            <input type="checkbox" value="episode300" id="episodeChoice3" />
+            Episode 300</label
+          >
+
+          <label for="episodeChoice4">
+            <input type="checkbox" value="episode400" id="episodeChoice4" />
+            Episode 400</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Tell us your watching experience of Running Man</p>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here....."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
